@@ -1,4 +1,5 @@
 @import "./css/header.css";
+@import "./css/topHeader.css";
 
 * {
   direction: rtl !important;

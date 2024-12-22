@@ -1,158 +1,85 @@
 @import "colorstheme.css";
 
 
-    /* start top header */
-    
-    .topHeader {
-      width: inherit;
-      padding: 0px;
-      height: 57px;
-      display: flex;
-      gap: 2px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: solid 1px var(--primary-color) !important;
-      background-color: var(--secondary-color);
-      color: var(--text-color);
-    }
-  .breakingTitle {
-      font-size: 18px;
-      height: inherit;
-      width: 10% !important;
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0px 24px 24px 0px !important;
-      background-color: var(--primary-color);
-  }
-  .breakingTitle p{
-    margin-bottom: 0px !important;
-    text-align: center !important;
-  }
-  .newsText {
-      width: 90% !important;
-      font-size: 14px;
-      font-weight: medium;
-      white-space: nowrap;
-      overflow: hidden;
-  }
-  .newsText > ul {
-      width: calc(443.98px*7) !important;
-      overflow: hidden !important;
-      display: flex !important;
-      gap: 8px;
-      flex-direction: row;
-      animation: newsText 60s linear infinite;
-      direction: rtl !important;
-  }
-  .newsText > ul > li {
-      display: inline-block;
-  }
-  .newsText > ul > li > a {
-      color:var(--text-color);
-  }
-  .newsText > ul > li > a > p {
-    margin-bottom: 0px !important;
-  }
-
-  @keyframes newsText {
-      0% {
-        transform: translate(0, 0);
-      }
-      100% {
-        transform: translate(100%, 0);
-      }
-    }
-
-    @media screen and (max-width: 768px ) {
-      .breakingTitle {
-        width: 50% !important;
-    }
-    }
-
-  @media screen and (min-width: 1024px ) {
-    .breakingTitle {
-      width: 20% !important;
-  }
-  }
-  /* end top header */
-
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: fixed ! important;
-    margin-top: 14px ;
+  position: fixed ! important;
+  margin-top: -50px ;
 }
 
 .dropdown .dropdown-menu {
-    display: none !important;
-  }
+  display: none !important;
+}
 
 .dropdown:hover .dropdown-menu {
   display: flex !important;
 }
 
+
 .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
 }
 
 .mega-menu {
-    width: auto !important;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 24px !important;
-    border: none !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mega-menu-item {
-    margin-bottom: 20px;
-    flex-basis: 25%;
-  }
-  
-  .mega-menu-item h6 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .mega-menu-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .mega-menu-item ul li {
-    margin-bottom: 10px;
-  }
-  
-  .mega-menu-item ul li a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .mega-menu-item ul li a:hover {
-    color: #23527c;
-  }
+  width: auto !important;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 24px !important;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .lang{
-    border: 1px solid #196CDF;
-    border-radius: 10px;
+.mega-menu-item {
+  margin-bottom: 10px;
+  flex-basis: 25%;
+}
 
-  }
+.mega-menu-item h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-  .langLogo{
-    background-color: #196CDF;
-    padding: 8px;
-    border-radius: 0px 8px 8px 0px;
-    margin-left: 24px;
-  }
+.mega-menu-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .fas{
-    color: #196CDF;
-  }
+.mega-menu-item ul li {
+  margin-bottom: 10px;
+}
+
+.mega-menu-item ul li a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.mega-menu-item ul li a:hover {
+  color: #23527c;
+}
+
+.lang {
+  border: 1px solid #196CDF;
+  border-radius: 10px;
+
+}
+
+.langLogo {
+  background-color: #196CDF;
+  padding: 8px;
+  border-radius: 0px 8px 8px 0px;
+  margin-left: 24px;
+}
+
+.fas {
+  color: #196CDF;
+}
