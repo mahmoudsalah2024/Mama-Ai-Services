@@ -1,0 +1,44 @@
+/* start Burger Menu */
+.fas.fa-bars{
+cursor: pointer;
+}
+.showAnddisplay {
+    display: flex !important;
+}
+
+
+.burgermenuoverlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--dark-overlay);
+    z-index: 100;
+}
+
+.burgermenu {
+    width: 80%;
+    height: 100%;
+    overflow: scroll;
+    background-color: var(--secondary-color);
+    border-left: 4px solid var(--text-color);
+    border-radius: 25px 0 0 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 25px;
+}
+
+.burgermenu .fa-times {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.fa-times:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* end Burger Menu */
