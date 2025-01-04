@@ -7,6 +7,7 @@
 
 .articleMenu .dropdown-menu {
   display: none !important;
+  animation: slideFromLeftToRight 0.3s ease-in-out forwards;
 }
 
 .articleMenu.show .dropdown-menu {
@@ -15,6 +16,7 @@
 
 .langMenu .dropdown-menu {
   display: none !important;
+  animation: slideFromTopToBottom 0.3s ease-in-out forwards;
 }
 
 .langMenu.show .dropdown-menu {
@@ -23,6 +25,7 @@
 
 .megaMenu .dropdown-menu {
   display: none !important;
+  animation: slideFromLeftToRight 0.3s ease-in-out forwards;
 }
 
 .megaMenu.show .dropdown-menu {
@@ -31,10 +34,33 @@
 
 .profileContainer .dropdown-menu {
   display: none !important;
+  animation: slideFromLeftToRight 0.3s ease-in-out forwards;
 }
 
 .profileContainer.show .dropdown-menu {
   display: flex !important;
+}
+
+@keyframes slideFromLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translatex(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes slideFromTopToBottom {
+  0% {
+    opacity: 0;
+    transform: translatey(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
 
 .mega-menu {

@@ -41,4 +41,60 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.burgerServicesMenu .dropdown-menu {
+    display: none !important;
+    animation: slideFromTopToBottom 0.3s ease-in-out forwards;
+  }
+  
+.burgerServicesMenu.show .dropdown-menu {
+display: flex !important;
+}
+
+.burgerServices-menu {
+    width: auto !important;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 24px !important;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .burgerServices-menu-item {
+    margin-bottom: 10px;
+    flex-basis: 25%;
+  }
+  
+  .burgerServices-menu-item h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .burgerServices-menu-item ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .burgerServices-menu-item ul.show {
+    display: block;
+  }
+  
+  .burgerServices-menu-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  .burgerServices-menu-item ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  .burgerServices-menu-item ul li a:hover {
+    color: var(--primary-color);
+  }
+
 /* end Burger Menu */
